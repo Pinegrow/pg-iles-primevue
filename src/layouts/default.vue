@@ -23,7 +23,6 @@
   </div>
 </template>
 <style>
-  @import '~/assets/css/global.css';
   @import '~/assets/css/main.css';
   #app {
     max-width: 1280px;
