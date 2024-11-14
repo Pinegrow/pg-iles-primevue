@@ -5,8 +5,17 @@
 export default {
   title: 'Vue Designer',
   description: 'Vue Designer îles PrimeVue - Quick start template',
+  logo: 'i-vscode-icons:file-type-coffeelint',
   author: 'Pinegrow',
   url: 'https://pg-iles-primevue.netlify.app',
+  github: 'https://github.com/pinegrow/pg-iles-primevue',
+  defaultLocale: 'en', // default
+  identity: {
+    type: 'Organization',
+  } as any,
+  twitter: '@vuedesigner',
+  trailingSlash: false, // default
+  titleSeparator: '|', // default
   nav: [
     {
       text: 'Home',
