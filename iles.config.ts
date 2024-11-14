@@ -7,6 +7,8 @@ import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 import VueDevTools from 'vite-plugin-vue-devtools'
 
+import { PrimeVueResolver } from '@primevue/auto-import-resolver'
+
 // import { visualizer } from 'rollup-plugin-visualizer'
 
 import site from './src/site'
@@ -24,6 +26,14 @@ export default defineConfig({
         liveDesigner: {
           iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
           devtoolsKey: 'devtoolsKey', // see app.ts
+          primevue: {
+            /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
+            configPath: 'primevue.config.ts', // or file where primevue is created
+            // themePath: false, // Set to false so that Design Panel is not used
+            // utilities: false,
+            // restartOnConfigUpdate: true,
+            restartOnThemeUpdate: true,
+          },
           // plugins: [
           //   {
           //     name: 'My Awesome Lib 3.0',
@@ -52,7 +62,7 @@ export default defineConfig({
     // allow auto import and register components used in markdown
     // include: [/\.vue$/, /\.vue\?vue/, /\.md$/, /\.mdx?/] // already included by iles
 
-    // resolvers: [], // Auto-import using resolvers
+    resolvers: [PrimeVueResolver()], // Auto-import using resolvers
 
     // transformer: 'vue3', // already set by iles
 
@@ -117,6 +127,10 @@ export default defineConfig({
       }),
       VueDevTools(),
     ],
+
+    ssr: {
+      noExternal: ['primevue'],
+    },
 
     // build: {
     //   // Vite uses Rollup under the hold, so rollup options & plugins can be used for advanced usage

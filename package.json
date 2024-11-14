@@ -1,15 +1,16 @@
 {
-  "name": "pg-iles",
+  "name": "pg-iles-primevue",
   "version": "0.0.0",
-  "homepage": "https://pg-iles-css.netlify.app",
+  "homepage": "https://pg-iles-primevue.netlify.app",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pinegrow/pg-iles.git"
+    "url": "https://github.com/pinegrow/pg-iles-primevue.git"
   },
+  "type": "module",
   "scripts": {
     "dev": "iles dev",
     "now": "npm run build && npm run preview",
-    "lighthouse": "npx unlighthouse --no-cache --site https://pg-iles-css.netlify.app",
+    "lighthouse": "npx unlighthouse --no-cache --site https://pg-iles-primevue.netlify.app",
     "build": "iles build",
     "preview": "iles preview --open --port 5050",
     "type-check": "vue-tsc --noEmit",
@@ -22,10 +23,12 @@
     "node": "^14.18 || >= 16.0.0"
   },
   "dependencies": {
+    "@primevue/themes": "^4.2.1",
     "@vueuse/core": "^10.1.2",
     "@vueuse/head": "^1.1.26",
     "defu": "^6.1.2",
     "pinia": "^2.0.35",
+    "primevue": "^4.2.1",
     "vee-validate": "^4.11.6"
   },
   "devDependencies": {
@@ -33,6 +36,7 @@
     "@nuxt/eslint-config": "^0.1.1",
     "@pinegrow/iles-module": "^3.0.60",
     "@preact/preset-vite": "^2.5.0",
+    "@primevue/auto-import-resolver": "^4.2.1",
     "@sveltejs/vite-plugin-svelte": "^2.4.2",
     "@types/node": "^20.5.0",
     "@unocss/preset-icons": "^0.57.2",

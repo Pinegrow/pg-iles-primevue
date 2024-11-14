@@ -15,7 +15,7 @@
       "~/*": ["src/*"],
       "~~/*": ["*"]
     },
-    "types": ["node"],
+    "types": ["node", "primevue"],
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "skipLibCheck": true,
     "allowJs": true,

@@ -5,11 +5,17 @@
 </script>
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <div style="display: flex; align-items: center; justify-content: center">
+      <h1 class="green">{{ msg }}</h1>
+      <DarkModeSwitch
+        style="padding-bottom: 12px; margin-left: 16px"
+        client:load
+      />
+    </div>
     <h3>
       This is a simple template
       <a
-        href="https://github.com/pinegrow/pg-iles"
+        href="https://github.com/pinegrow/pg-iles-primevue"
         target="_blank"
         rel="noopener"
         ><BaseIcon
@@ -27,6 +33,12 @@
         target="_blank"
         rel="noopener"
         >Pinegrow îles Module</a
+      >,
+      <a
+        href="https://www.npmjs.com/package/@pinegrow/primevue-plugin"
+        target="_blank"
+        rel="noopener"
+        >Pinegrow PrimeVue Plugin</a
       >
       and other goodies for your drag & drop experience.
     </h3>

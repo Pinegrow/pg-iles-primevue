@@ -1,14 +1,14 @@
 <script setup lang="ts">
   import { useSeoMeta } from 'unhead'
 
-  // import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
-  // import type { Script } from '@unhead/schema'
+  import checkDarkTheme from '@/composables/dark-color-scheme-check?raw'
+  import type { Script } from '@unhead/schema'
 
   import siteDefn from '@/site'
   import image from '@/screenshots/image.jpg'
-  // import { pg_font_urls } from '~~/themes/pg-tailwindcss/tokens.mjs'
+  import { pg_font_urls } from '~~/themes/pg-primevue/tokens.mjs'
 
-  // type TurboScript = Script & { once: true }
+  type TurboScript = Script & { once: true }
 
   const link: any = [
     {
@@ -19,30 +19,30 @@
   ]
   const noscript: any = []
 
-  // if (pg_font_urls.length) {
-  //   const googleapis = 'https://fonts.googleapis.com'
-  //   const gstatic = 'https://fonts.gstatic.com'
-  //   link.push(
-  //     { rel: 'dns-prefetch', href: googleapis },
-  //     { rel: 'dns-prefetch', href: gstatic },
-  //     { rel: 'preconnect', crossorigin: 'anonymous', href: googleapis },
-  //     { rel: 'preconnect', crossorigin: 'anonymous', href: gstatic },
-  //     {
-  //       rel: 'preload',
-  //       as: 'style',
-  //       onload: "this.onload=null;this.rel='stylesheet'",
-  //       href: pg_font_urls.toString(),
-  //     },
-  //   )
-  //   noscript.push(
-  //     `<link rel="stylesheet" crossorigin="anonymous" href="${pg_font_urls.toString()}" />`,
-  //   )
-  // }
+  if (pg_font_urls.length) {
+    const googleapis = 'https://fonts.googleapis.com'
+    const gstatic = 'https://fonts.gstatic.com'
+    link.push(
+      { rel: 'dns-prefetch', href: googleapis },
+      { rel: 'dns-prefetch', href: gstatic },
+      { rel: 'preconnect', crossorigin: 'anonymous', href: googleapis },
+      { rel: 'preconnect', crossorigin: 'anonymous', href: gstatic },
+      {
+        rel: 'preload',
+        as: 'style',
+        onload: "this.onload=null;this.rel='stylesheet'",
+        href: pg_font_urls.toString(),
+      },
+    )
+    noscript.push(
+      `<link rel="stylesheet" crossorigin="anonymous" href="${pg_font_urls.toString()}" />`,
+    )
+  }
 
   const { title, description, url, author } = siteDefn
 
   const { frontmatter, site } = usePage()
-  const imgUrl = $computed(() => `${site.url}${image}`)
+  const imgUrl = computed(() => `${site.url}${image}`)
 
   useSeoMeta({
     // charset: 'utf-8',
@@ -54,7 +54,7 @@
     ogTitle: title,
     ogDescription: description,
     ogType: 'website',
-    ogImage: imgUrl,
+    ogImage: imgUrl.value,
     ogImageAlt: title,
     // og:image:width
     // og:image:height
@@ -67,7 +67,7 @@
     // og: type
     twitterTitle: title,
     twitterDescription: description,
-    twitterImage: imgUrl,
+    twitterImage: imgUrl.value,
     twitterImageAlt: title,
     twitterSite: '@vuedesigner',
     twitterCreator: '@techakayy',
@@ -89,7 +89,7 @@
       { name: 'author', content: author },
       { name: 'keywords', content: computed(() => frontmatter.tags) },
     ],
-    // script: [{innerHTML: checkDarkTheme, once: true} as TurboScript],
+    script: [{ innerHTML: checkDarkTheme, once: true } as TurboScript],
     link,
     noscript,
   })

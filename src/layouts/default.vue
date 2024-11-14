@@ -23,7 +23,8 @@
   </div>
 </template>
 <style>
-  @import '~/assets/css/base.css';
+  @import '~/assets/css/global.css';
+  @import '~/assets/css/main.css';
   #app {
     max-width: 1280px;
     margin: 0 auto;
@@ -41,7 +42,7 @@
   a,
   .green {
     text-decoration: none;
-    color: hsla(160, 100%, 37%, 1);
+    color: var(--color-accent);
     transition: 0.4s;
   }
   @media (hover: hover) {
