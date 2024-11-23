@@ -34,7 +34,7 @@
   "devDependencies": {
     "@iconify/json": "^2.2.64",
     "@nuxt/eslint-config": "^0.1.1",
-    "@pinegrow/iles-module": "^3.0.60",
+    "@pinegrow/iles-module": "^3.0.62",
     "@pinegrow/primevue-plugin": "^3.0.2-beta.0",
     "@preact/preset-vite": "^2.5.0",
     "@primevue/auto-import-resolver": "^4.2.1",
