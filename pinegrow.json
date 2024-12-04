@@ -1,0 +1,202 @@
+{
+  "files": {
+    "src/pages/index.vue": {
+      "frameworks": [
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "vite-plugin-vue-devtools",
+        "@vue/devtools",
+        "pg.css.grid",
+        "project",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "app_designer",
+        "vue",
+        "iles",
+        "@pinegrow/iles-module",
+        "@unocss/preset-icons",
+        "unplugin-vue-components",
+        "unplugin-auto-import",
+        "@islands/pages",
+        "tw.flowbite",
+        "primevue",
+        "pg.html"
+      ]
+    },
+    "src/components/HelloWorld.vue": {
+      "frameworks": [
+        "primevue",
+        "pg.insight.events",
+        "vite-plugin-vue-devtools",
+        "@vue/devtools",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "@unocss/preset-icons",
+        "pg.code-validator",
+        "@islands/pages",
+        "project",
+        "pg.project.items",
+        "pg.asset.manager",
+        "unplugin-auto-import",
+        "app_designer",
+        "vue",
+        "unplugin-vue-components",
+        "iles",
+        "@pinegrow/iles-module",
+        "tw.flowbite",
+        "pg.html"
+      ]
+    },
+    "src/components/WelcomeItem.vue": {
+      "frameworks": [
+        "vite-plugin-vue-devtools",
+        "@vue/devtools",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@pinegrow/iles-module",
+        "iles",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "pg.html"
+      ]
+    },
+    "src/components/DarkModeSwitch.vue": {
+      "frameworks": [
+        "pg.insight.events",
+        "@vue/devtools",
+        "pg.vue.tree.painter",
+        "vite-plugin-vue-devtools",
+        "@unocss/preset-icons",
+        "pg.css.grid",
+        "@islands/pages",
+        "pg.image.overlay",
+        "unplugin-auto-import",
+        "pg.code-validator",
+        "project",
+        "unplugin-vue-components",
+        "pg.project.items",
+        "@pinegrow/iles-module",
+        "pg.asset.manager",
+        "iles",
+        "vue",
+        "app_designer",
+        "primevue",
+        "tw.flowbite",
+        "pg.html"
+      ]
+    },
+    "src/components/TheWelcome.vue": {
+      "frameworks": [
+        "@vue/devtools",
+        "pg.insight.events",
+        "vite-plugin-vue-devtools",
+        "pg.vue.tree.painter",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "pg.css.grid",
+        "unplugin-auto-import",
+        "pg.image.overlay",
+        "project",
+        "unplugin-vue-components",
+        "pg.code-validator",
+        "@pinegrow/iles-module",
+        "pg.project.items",
+        "iles",
+        "pg.asset.manager",
+        "vue",
+        "app_designer",
+        "primevue",
+        "tw.flowbite",
+        "pg.html"
+      ]
+    },
+    "src/components/SampleCard.vue": {
+      "frameworks": [
+        "@vue/devtools",
+        "vite-plugin-vue-devtools",
+        "@unocss/preset-icons",
+        "@islands/pages",
+        "unplugin-auto-import",
+        "unplugin-vue-components",
+        "@pinegrow/iles-module",
+        "iles",
+        "vue",
+        "app_designer",
+        "project",
+        "pg.insight.events",
+        "pg.vue.tree.painter",
+        "pg.css.grid",
+        "pg.image.overlay",
+        "pg.code-validator",
+        "pg.project.items",
+        "pg.asset.manager",
+        "primevue",
+        "tw.flowbite",
+        "pg.html"
+      ]
+    }
+  },
+  "template_framework_id": "vue",
+  "open-pages": [
+    "src/pages/index.vue",
+    "src/components/TheWelcome.vue",
+    "src/components/DarkModeSwitch.vue",
+    "src/components/SampleCard.vue"
+  ],
+  "breakpoints": ["640px", "768px", "1024px", "1280px", "1536px"],
+  "frameworks": [
+    "@vue/devtools",
+    "vite-plugin-vue-devtools",
+    "@unocss/preset-icons",
+    "@islands/pages",
+    "unplugin-auto-import",
+    "unplugin-vue-components",
+    "@pinegrow/iles-module",
+    "iles",
+    "vue",
+    "app_designer",
+    "project",
+    "pg.insight.events",
+    "pg.vue.tree.painter",
+    "pg.css.grid",
+    "pg.image.overlay",
+    "pg.code-validator",
+    "pg.project.items",
+    "pg.asset.manager",
+    "primevue",
+    "tw.flowbite",
+    "pg.html"
+  ],
+  "urls": {
+    "src/pages/index.vue": { "open-page-views": [{ "w": 660, "h": 0 }] },
+    "src/components/HelloWorld.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "src/components/WelcomeItem.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "src/components/DarkModeSwitch.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "src/components/TheWelcome.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    },
+    "src/components/SampleCard.vue": {
+      "open-page-views": [{ "w": 1024, "h": 0 }]
+    }
+  },
+  "recent-classes": ["text-red"]
+}
