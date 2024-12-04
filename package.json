@@ -2,11 +2,11 @@
   "name": "pg-iles-primevue",
   "version": "0.0.0",
   "homepage": "https://pg-iles-primevue.netlify.app",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/pinegrow/pg-iles-primevue.git"
   },
-  "type": "module",
   "scripts": {
     "dev": "iles dev",
     "now": "npm run build && npm run preview",
@@ -34,8 +34,8 @@
   "devDependencies": {
     "@iconify/json": "^2.2.64",
     "@nuxt/eslint-config": "^0.1.1",
-    "@pinegrow/iles-module": "^3.0.62",
-    "@pinegrow/primevue-plugin": "^3.0.2-beta.0",
+    "@pinegrow/iles-module": "^3.0.65",
+    "@pinegrow/primevue-plugin": "^3.0.4",
     "@preact/preset-vite": "^2.5.0",
     "@primevue/auto-import-resolver": "^4.2.1",
     "@sveltejs/vite-plugin-svelte": "^2.4.2",
