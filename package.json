@@ -25,7 +25,6 @@
   "dependencies": {
     "@primevue/themes": "^4.2.1",
     "@vueuse/core": "^10.1.2",
-    "@vueuse/head": "^1.1.26",
     "defu": "^6.1.2",
     "pinia": "^2.0.35",
     "primevue": "^4.2.1",
@@ -44,7 +43,7 @@
     "@vue/devtools": "^6.5.0",
     "eslint": "^8.39.0",
     "eslint-config-prettier": "^8.6.0",
-    "iles": "0.9.5",
+    "iles": "^0.10.0-beta.1",
     "npm-run-all": "^4.1.5",
     "ofetch": "^1.0.1",
     "preact": "^10.15.1",
