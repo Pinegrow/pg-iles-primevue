@@ -16,18 +16,9 @@ export default {
   twitter: '@vuedesigner',
   trailingSlash: false, // default
   titleSeparator: '|', // default
-  nav: [
-    {
-      text: 'Home',
-      link: '/',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-    {
-      text: 'About',
-      link: '/about',
-      type: 'primary',
-      icon: 'i-mdi-home',
-    },
-  ],
+
+  navs: {
+    primary: [{ title: 'Home', icon: 'i-mdi-home', to: '/' }],
+    secondary: [{ title: 'About', icon: 'i-mdi-home', to: '/about' }],
+  },
 }
