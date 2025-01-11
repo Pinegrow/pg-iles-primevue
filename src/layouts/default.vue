@@ -1,8 +1,9 @@
+<script setup lang="ts">
+  useHeadAndMeta()
+</script>
+
 <template>
   <div class="layout">
-    <header>
-      <HeadAndMeta />
-    </header>
     <main>
       <slot />
     </main>
