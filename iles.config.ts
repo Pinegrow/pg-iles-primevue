@@ -6,7 +6,7 @@ import AutoImportAPIs from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
 import presetIcons from '@unocss/preset-icons'
 import VueDevTools from 'vite-plugin-vue-devtools'
-import { unheadComposablesImports } from 'unhead'
+import { unheadVueComposablesImports } from '@unhead/vue'
 
 import { PrimeVueResolver } from '@primevue/auto-import-resolver'
 
@@ -26,7 +26,6 @@ export default defineConfig({
       {
         liveDesigner: {
           iconPreferredCase: 'unocss', // default value (can be removed), unocss by default uses the unocss format for icon names
-          devtoolsKey: 'devtoolsKey', // see app.ts
           primevue: {
             /* Please ensure that you update the filenames and paths to accurately match those used in your project. */
             configPath: 'primevue.config.ts', // or file where primevue is created
@@ -102,7 +101,7 @@ export default defineConfig({
           // 'vue-router',
           // 'vue-i18n',
           // 'vue/macros',
-          unheadComposablesImports[0],
+          unheadVueComposablesImports,
           '@vueuse/core',
           'pinia',
         ],
